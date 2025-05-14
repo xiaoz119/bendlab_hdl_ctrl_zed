@@ -1,4 +1,4 @@
-# AXI Controller Bendlab Device Check and Data Read for ZedBoard
+# AXI I2C Device Controller for Bendlab Sensor Target on ZedBoard
 
 This repository contains a Vivado project that implements an AXI4-Lite-based I2C Device Controller and ISA Design. 
 
