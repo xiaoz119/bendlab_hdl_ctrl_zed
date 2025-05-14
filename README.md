@@ -34,7 +34,7 @@ This will automatically create the Vivado project, add all necessary source file
 
 ## BLOCK Diagram
 <p align="center">
-  <img src="figure/block_diagram_axi_gpio.jpg" width="600"/>
+  <img src="fig/axic_ctrl_hdl_diagram.png" width="600"/>
 </p
 
 
