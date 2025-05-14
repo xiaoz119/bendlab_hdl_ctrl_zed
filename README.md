@@ -7,7 +7,7 @@ This repository contains a Vivado project that implements an AXI4-Lite-based I2C
 - **Vivado Version**: 2023.1 or higher  
 - **Board**: ZedBoard (Zynq-7000)
 - **Sensor**: Bendlab Motion & Position 2-Axis Bidirectional Flex Sensor 
-- 
+
 ## Getting Started
 
 ### 1. Clone the Repository
