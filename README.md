@@ -1,6 +1,6 @@
-# AXI Controller GPIO Project for ZedBoard
+# AXI Controller Bendlab Device Check and Data Read for ZedBoard
 
-This repository contains a Vivado project that implements an AXI4-Lite-based GPIO controller for the ZedBoard.
+This repository contains a Vivado project that implements an AXI4-Lite-based I2C Device Controller and ISA Design. 
 
 ## Requirements
 
@@ -32,10 +32,22 @@ This will automatically create the Vivado project, add all necessary source file
 - Ensure the Vivado version is 2023.1 or newer to avoid compatibility issues.
 - IP cores may require regeneration if opened in a different environment.
 
-## BLOCK Diagram
+## Board Setup
+<p align="center">
+  <img src="fig/axi_ctrl_hdl_boardDemo.png" width="600"/>
+</p
+
+
+----------------------  
+## Block Diagram
 <p align="center">
   <img src="fig/axic_ctrl_hdl_diagram.png" width="600"/>
 </p
+
+
+
+
+---------------------- 
 
 
 ## Controller Instruction Set Architecture
