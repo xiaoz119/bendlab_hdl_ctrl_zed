@@ -1,2 +1,2 @@
-bendlab_ctrl_hdl/
-instrGen/__pycache__/
+bendlab_ctrl_hdl/*
+**/__pycache__/*
