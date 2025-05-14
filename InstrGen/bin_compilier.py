@@ -230,15 +230,7 @@ def create_instruction_file(filename, instructions_config, instructions_exec, ad
 
 
 # --- Example Usage with the new functions ---
-# Configuration
-# config1 = axi_write_i(axi_wr_address=0x040, data_20_bit=0x0000a)
-# print(f"AXI Write (I-type) Instruction: {config1}")
-
-# config2 = axi_write_i(axi_wr_address=0x01c, data_20_bit=0x00000)
-# print(f"AXI Write (I-type) Instruction: {config2}")
-
 check_SR = axi_read_compare(axi_address=0x104, compare_value=0x0040, compare_operation=0b11)
-
 
 nop = generate_nop_instruction()
 
@@ -267,37 +259,6 @@ set_slave_addr2 = axi_write_i(axi_wr_address=0x108, data_20_bit=0x00191) #
 set_read_transfer = axi_write_i(axi_wr_address=0x108, data_20_bit=0x201) # register 1
 
 
-
-
-# Output filename
-# output_filename = "instructions.mem"
-# instr_config = [nop, config1, config2, read_00, read_01, config2_rTest, read_02]
-
-# instr_exec = [rest_tx_fifo, 
-#               enable_iic, 
-#               delay_255,
-#               set_slave_addr1, 
-#               set_slave_reg, 
-#               set_slave_addr2, 
-#               set_read_transfer,
-#               delay_63,
-#               read_SR,
-#               check_SR,
-#               read_RX_FIFO,
-#               delay_1023]
-# Delay for 10ms
-
-# output_filename = "instructions.mem"
-# instr_config = [nop, config1, config2]
-
-# instr_exec = [rest_tx_fifo, 
-#               enable_iic, 
-#               delay_255,
-#               set_slave_addr1, 
-#               set_slave_reg, 
-#               set_slave_addr2, 
-#               set_read_transfer]
-# Delay for 10ms
 
 output_filename = "bendlab_device_check.mem"
 config_interupt = axi_write_i(axi_wr_address=0x040, data_20_bit=0x00a) # register 2
@@ -342,18 +303,7 @@ instr_iic_read = [
         axi_read_r(axi_rd_address=0x10c, local_wr_address=0x03, count=1), # Read RX FIFO, write to local address 0x03
         axi_read_compare(axi_address=0x104, compare_value=0x040, compare_operation=0b01),
         axi_read_r(axi_rd_address=0x10c, local_wr_address=0x04, count=1) # Read RX FIFO, write to local address 0x04
-        
-        # axi_read_compare(axi_address=0x104, compare_value=0x08c, compare_operation=0b00), # Compare with 0x040, pass operation 3 (not equal)
-        # axi_read_r(axi_rd_address=0x10c, local_wr_address=0x00, count=1), # Read RX FIFO, write to local address 0x00
-        # axi_read_compare(axi_address=0x104, compare_value=0x08c, compare_operation=0b00), # Compare with 0x040, pass operation 3 (not equal)
-        # axi_read_r(axi_rd_address=0x10c, local_wr_address=0x01, count=1), # Read RX FIFO, write to local address 0x01
-        # axi_read_compare(axi_address=0x104, compare_value=0x08c, compare_operation=0b00), # Compare with 0x040, pass operation 3 (not equal)
-        # axi_read_r(axi_rd_address=0x10c, local_wr_address=0x02, count=1), # Read RX FIFO, write to local address 0x02
-        # axi_read_compare(axi_address=0x104, compare_value=0x08c, compare_operation=0b00), # Compare with 0x040, pass operation 3 (not equal)
-        # axi_read_r(axi_rd_address=0x10c, local_wr_address=0x03, count=1), # Read RX FIFO, write to local address 0x03
-        # axi_read_compare(axi_address=0x104, compare_value=0x08c, compare_operation=0b00), # Compare with 0x040, pass operation 3 (not equal)
-        # axi_read_r(axi_rd_address=0x10c, local_wr_address=0x04, count=1) # Read RX FIFO, write to local address 0x04
-        
+                
 ]
 
 instr_config = [nop, config_interupt]
@@ -365,4 +315,4 @@ instr_exec = instr_iic_write + [delay_2ms] + instr_iic_read + [delay_2ms]
 # print(f"AXI Write (I-type) Instruction: {instr_exec}")
 
 # Write the instructions to the file
-create_instruction_file(output_filename, instr_config, instr_exec, addr_config=10)
+# create_instruction_file(output_filename, instr_config, instr_exec, addr_config=10)
