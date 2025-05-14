@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 14 16:10:27 2025
+# Process ID: 27680
+# Current directory: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1
+# Command line: vivado.exe -log top_axi_iic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_axi_iic.tcl
+# Log file: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/top_axi_iic.vds
+# Journal file: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1\vivado.jou
+# Running On: DESKTOP-SF4M6F2, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34088 MB
+#-----------------------------------------------------------
+source top_axi_iic.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1506.441 ; gain = 198.473
+Command: synth_design -top top_axi_iic -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20816
+INFO: [Synth 8-11241] undeclared symbol 'intr_bl_negedge', assumed default net type 'wire' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:137]
+WARNING: [Synth 8-8895] 'intr_bl_negedge' is already implicitly declared on line 137 [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:174]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2358.059 ; gain = 410.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_axi_iic' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:21]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [H:/AMD/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [H:/AMD/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6157] synthesizing module 'instruction_rom_rd' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/instruction_rom_rd.v:23]
+INFO: [Synth 8-3876] $readmem data file 'bendlab_data_read_interrupt.mem' is read successfully [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/instruction_rom_rd.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_rom_rd' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/instruction_rom_rd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/.Xil/Vivado-27680-DESKTOP-SF4M6F2/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/.Xil/Vivado-27680-DESKTOP-SF4M6F2/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_master_controller' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/axi4_lite_master_controller.v:21]
+	Parameter AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter PC_CONFIG bound to: 50 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fsm_top_level' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_top_level.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_top_level' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_top_level.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_axi_lite_wr' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_wr.v:23]
+INFO: [Synth 8-226] default block is never used [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_wr.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_axi_lite_wr' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_wr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_axi_lite_rd' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_rd.v:23]
+INFO: [Synth 8-226] default block is never used [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_rd.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_axi_lite_rd' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/fsm_axi_lite_rd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_master_controller' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/axi4_lite_master_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'axi_iic_0' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/.Xil/Vivado-27680-DESKTOP-SF4M6F2/realtime/axi_iic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_iic_0' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/.Xil/Vivado-27680-DESKTOP-SF4M6F2/realtime/axi_iic_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/edge_detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/edge_detector.v:23]
+WARNING: [Synth 8-7071] port 'pose_edge' of module 'edge_detector' is unconnected for instance 'u_edge_detector' [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:175]
+WARNING: [Synth 8-7023] instance 'u_edge_detector' of module 'edge_detector' has 5 connections declared, but only 4 given [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_iic' (0#1) [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:21]
+WARNING: [Synth 8-7137] Register delay_counter_reg in module axi4_lite_master_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/axi4_lite_master_controller.v:201]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_axi4_lite_master_controller'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:109]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_instruction_rom_rd'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:88]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_bram'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:95]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_axi_iic_0'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:143]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'iic_rtl_sda_iobuf'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:80]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'iic_rtl_scl_iobuf'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_edge_detector'. This will prevent further optimization [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/sources_1/imports/hdl/top_axi_iic.v:175]
+WARNING: [Synth 8-3917] design top_axi_iic has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_axi_iic has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_axi_iic has port led[4] driven by constant 0
+WARNING: [Synth 8-7129] Port M_ACLK in module axi4_lite_master_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module axi4_lite_master_controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2455.898 ; gain = 508.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2473.805 ; gain = 526.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2473.805 ; gain = 526.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2485.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [h:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_bram'
+Finished Parsing XDC File [h:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_bram'
+Parsing XDC File [h:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.gen/sources_1/ip/axi_iic_0/axi_iic_0/axi_iic_0_in_context.xdc] for cell 'u_axi_iic_0'
+Finished Parsing XDC File [h:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.gen/sources_1/ip/axi_iic_0/axi_iic_0/axi_iic_0_in_context.xdc] for cell 'u_axi_iic_0'
+Parsing XDC File [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc:381]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc:386]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc:394]
+Finished Parsing XDC File [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_axi_iic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_axi_iic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed_iic_debug.xdc]
+Finished Parsing XDC File [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed_iic_debug.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.srcs/constrs_1/imports/constrs/zed_iic_debug.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_axi_iic_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_axi_iic_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2586.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2586.539 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_iic_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fsm_top_level'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fsm_axi_lite_wr'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'fsm_axi_lite_rd'
+INFO: [Synth 8-6159] Found Keep on FSM register 'next_state_reg' in module 'fsm_top_level', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                            00000 |                            00000
+                 S_FETCH |                            00001 |                            00001
+                S_DECODE |                            00010 |                            00010
+     S_AXI_EXECUTE_START |                            00011 |                            00011
+           S_AXI_EXECUTE |                            00100 |                            00100
+           S_COUNT_CHECK |                            00101 |                            00101
+            S_FLAG_CHECK |                            01000 |                            01000
+      S_AXI_EXECUTE_DONE |                            00110 |                            00110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'curr_state_reg' in module 'fsm_top_level', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  S_IDLE |                            00000 |                            00000
+                 S_FETCH |                            00001 |                            00001
+                S_DECODE |                            00010 |                            00010
+     S_AXI_EXECUTE_START |                            00011 |                            00011
+           S_AXI_EXECUTE |                            00100 |                            00100
+           S_COUNT_CHECK |                            00101 |                            00101
+            S_FLAG_CHECK |                            01000 |                            01000
+      S_AXI_EXECUTE_DONE |                            00110 |                            00110
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+              S_WAIT_ACK |                               01 |                               01
+                 S_WRITE |                               10 |                               10
+                  S_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'fsm_axi_lite_wr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+              S_WAIT_ACK |                               01 |                               01
+                  S_READ |                               10 |                               10
+                  S_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'fsm_axi_lite_rd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   29 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               29 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	 257 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 22    
+	  10 Input    1 Bit        Muxes := 4     
+	  15 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top_axi_iic has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_axi_iic has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_axi_iic has port led[4] driven by constant 0
+WARNING: [Synth 8-7129] Port M_ACLK in module axi4_lite_master_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module axi4_lite_master_controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |axi_iic_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |axi_iic     |     1|
+|2     |blk_mem_gen |     1|
+|3     |BUFG        |     1|
+|4     |CARRY4      |    24|
+|5     |LUT1        |    15|
+|6     |LUT2        |    63|
+|7     |LUT3        |    19|
+|8     |LUT4        |    46|
+|9     |LUT5        |    48|
+|10    |LUT6        |    95|
+|11    |MUXF7       |     1|
+|12    |FDCE        |   158|
+|13    |FDRE        |    16|
+|14    |IBUF        |     3|
+|15    |IOBUF       |     2|
+|16    |OBUF        |     8|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2586.547 ; gain = 638.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2586.547 ; gain = 526.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2586.547 ; gain = 638.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2586.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2586.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: 283e2010
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2586.547 ; gain = 1042.258
+INFO: [Common 17-1381] The checkpoint 'H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/top_axi_iic.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_axi_iic_utilization_synth.rpt -pb top_axi_iic_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 16:10:56 2025...

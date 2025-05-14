@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 14 16:10:27 2025
+# Process ID: 27680
+# Current directory: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1
+# Command line: vivado.exe -log top_axi_iic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_axi_iic.tcl
+# Log file: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1/top_axi_iic.vds
+# Journal file: H:/workspace/AXI_IIC_Ctrl/export/bendlab_hdl_ctrl_zed/bendlab_ctrl_hdl/bendlab_ctrl_hdl.runs/synth_1\vivado.jou
+# Running On: DESKTOP-SF4M6F2, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 34088 MB
+#-----------------------------------------------------------
+source top_axi_iic.tcl -notrace

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_axi_iic_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="iic_pkg" />
+            <top_module name="ipif_pkg" />
+            <top_module name="top_axi_iic_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3,023.533 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,453.934 ns"></ZoomEndTime>
+      <Cursor1Time time="3,229.733 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="365"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/top_axi_iic_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/iic_rtl_scl_io" type="logic">
+      <obj_property name="ElementShortName">iic_rtl_scl_io</obj_property>
+      <obj_property name="ObjectShortName">iic_rtl_scl_io</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/iic_rtl_sda_io" type="logic">
+      <obj_property name="ElementShortName">iic_rtl_sda_io</obj_property>
+      <obj_property name="ObjectShortName">iic_rtl_sda_io</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/scl_i" type="logic">
+      <obj_property name="ElementShortName">scl_i</obj_property>
+      <obj_property name="ObjectShortName">scl_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/sda_i" type="logic">
+      <obj_property name="ElementShortName">sda_i</obj_property>
+      <obj_property name="ObjectShortName">sda_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/scl_o" type="logic">
+      <obj_property name="ElementShortName">scl_o</obj_property>
+      <obj_property name="ObjectShortName">scl_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/sda_o" type="logic">
+      <obj_property name="ElementShortName">sda_o</obj_property>
+      <obj_property name="ObjectShortName">sda_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/scl_t" type="logic">
+      <obj_property name="ElementShortName">scl_t</obj_property>
+      <obj_property name="ObjectShortName">scl_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/sda_t" type="logic">
+      <obj_property name="ElementShortName">sda_t</obj_property>
+      <obj_property name="ObjectShortName">sda_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/pc" type="array">
+      <obj_property name="ElementShortName">pc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group31" type="group">
+      <obj_property name="label">AXI</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_ACLK" type="logic">
+         <obj_property name="ElementShortName">M_ACLK</obj_property>
+         <obj_property name="ObjectShortName">M_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_ARESETN" type="logic">
+         <obj_property name="ElementShortName">M_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">M_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_awaddr" type="array">
+         <obj_property name="ElementShortName">M_AXI_awaddr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awaddr[8:0]</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_wdata" type="array">
+         <obj_property name="ElementShortName">M_AXI_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wdata[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_awready" type="logic">
+         <obj_property name="ElementShortName">M_AXI_awready</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_awvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXI_awvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_wready" type="logic">
+         <obj_property name="ElementShortName">M_AXI_wready</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_wstrb" type="array">
+         <obj_property name="ElementShortName">M_AXI_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_wvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXI_wvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_bready" type="logic">
+         <obj_property name="ElementShortName">M_AXI_bready</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_bresp" type="array">
+         <obj_property name="ElementShortName">M_AXI_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_bvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXI_bvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_araddr" type="array">
+         <obj_property name="ElementShortName">M_AXI_araddr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_araddr[8:0]</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_rdata" type="array">
+         <obj_property name="ElementShortName">M_AXI_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rdata[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_arready" type="logic">
+         <obj_property name="ElementShortName">M_AXI_arready</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_arvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXI_arvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_rready" type="logic">
+         <obj_property name="ElementShortName">M_AXI_rready</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_rresp" type="array">
+         <obj_property name="ElementShortName">M_AXI_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/M_AXI_rvalid" type="logic">
+         <obj_property name="ElementShortName">M_AXI_rvalid</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_rvalid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/u_fsm_top_level/curr_state" type="array">
+      <obj_property name="ElementShortName">curr_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_state[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/mem_rdata" type="array">
+      <obj_property name="ElementShortName">mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi4_lite_master_controller/pass_axi_compare_flag" type="logic">
+      <obj_property name="ElementShortName">pass_axi_compare_flag</obj_property>
+      <obj_property name="ObjectShortName">pass_axi_compare_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/sda_i" type="logic">
+      <obj_property name="ElementShortName">sda_i</obj_property>
+      <obj_property name="ObjectShortName">sda_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/sda_o" type="logic">
+      <obj_property name="ElementShortName">sda_o</obj_property>
+      <obj_property name="ObjectShortName">sda_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/sda_t" type="logic">
+      <obj_property name="ElementShortName">sda_t</obj_property>
+      <obj_property name="ObjectShortName">sda_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/scl_i" type="logic">
+      <obj_property name="ElementShortName">scl_i</obj_property>
+      <obj_property name="ObjectShortName">scl_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/scl_o" type="logic">
+      <obj_property name="ElementShortName">scl_o</obj_property>
+      <obj_property name="ObjectShortName">scl_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_axi_iic_tb/uut/u_axi_iic_0/scl_t" type="logic">
+      <obj_property name="ElementShortName">scl_t</obj_property>
+      <obj_property name="ObjectShortName">scl_t</obj_property>
+   </wvobject>
+</wave_config>
