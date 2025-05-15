@@ -197,11 +197,12 @@ def generate_interrupt_instruction():
     return instruction_bin
     
 
-def create_instruction_file(filename, instructions_config, instructions_exec, addr_config):
+def create_instruction_file(filename="output.mem", instructions_config=[], instructions_exec=[], addr_config=0, dir="."):
     """
     Creates an instruction file with a specific format.
 
     Args:
+        dir (str): The directory where the file will be saved. Defaults to the current directory.
         filename (str): The name of the output file.
         instructions_config (list): List of binary instructions for the configuration section.
                                   Starts at address 0.
@@ -217,12 +218,15 @@ def create_instruction_file(filename, instructions_config, instructions_exec, ad
     all_instructions[0:len(instructions_config)] = instructions_config
 
     if len(instructions_config) > addr_config:
-        raise ValueError(f"Instruction length exceeds the maximum limit of {addr_config} instructions. Current length: {len(instr_config)}") 
+        raise ValueError(f"Instruction length exceeds the maximum limit of {addr_config} instructions. Current length: {len(instructions_config)}") 
 
     # Place exec instructions at addr_config
     all_instructions[addr_config:addr_config + len(instructions_exec)] = instructions_exec
 
-    with open(filename, 'w') as f:
+    # Combine directory and filename to form the full path
+    filepath = f"{dir}/{filename}"
+
+    with open(filepath, 'w') as f:
         for instruction in all_instructions:
             f.write(instruction + '\n')
 

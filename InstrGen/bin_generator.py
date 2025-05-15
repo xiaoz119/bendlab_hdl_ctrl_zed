@@ -25,7 +25,7 @@ def i2c_read_axi(axi_base_addr = 0x000, i2c_addr = 0x000, mem_addr = 0x000, reg_
     instr.append(axi_write_i(axi_base_addr + CR, 0x001))
 
     # Delay for 2m
-    instr.append(generate_delay_instruction(200000))
+    # instr.append(generate_delay_instruction(200000))
 
     if reg_addr != -1:
         # Set the slave I2C address
@@ -59,7 +59,7 @@ def i2c_write_axi(axi_base_addr = 0x000, i2c_addr = 0x000, reg_addr = -1, tx_siz
     instr.append(axi_write_i(axi_base_addr + CR, 0x001))
 
     # Delay for 2m
-    instr.append(generate_delay_instruction(200000))
+    # instr.append(generate_delay_instruction(200000))
 
     # Set the slave I2C address
     instr.append(axi_write_i(axi_base_addr + TX_FIFO, (0x100 | (i2c_addr << 1))))
@@ -116,17 +116,19 @@ bl_data_i2c_read = i2c_read_axi(axi_base_addr=AXI_BASE_ADDR, i2c_addr=0x013, mem
 
 
 # ------------------------------------  Code Generation ------------------------------------
-# # Data Read with 200ms Delay
+# Data Read with 200ms Delay
 # output_filename = "bendlab_data_read.mem"
 # instr_config = [nop, config_interupt, delay_2ms] + bendlab_i2c_device_check + bl_data_i2c_start
 # instr_exec = [delay_200ms] + bl_data_i2c_read
 
 output_filename = "bendlab_data_read_interrupt.mem"
-instr_config = [nop, config_interupt, delay_2ms] + bendlab_i2c_device_check + bl_data_i2c_start + [delay_2ms]
+# instr_config = [nop, config_interupt, delay_2ms] + bendlab_i2c_device_check + bl_data_i2c_start + [delay_2ms]
+instr_config = [nop, config_interupt] + bendlab_i2c_device_check + bl_data_i2c_start
 instr_exec = [interrupt_check] + bl_data_i2c_read
+
 
 print("Config Instruction length: ", len(instr_config), "/" , CONFIG_LENGTH)
 print("Execution Instruction length: ", len(instr_exec)) 
 # Write the instructions to the file
-create_instruction_file(output_filename, instr_config, instr_exec, addr_config=CONFIG_LENGTH)
+create_instruction_file(output_filename, instr_config, instr_exec, addr_config=CONFIG_LENGTH, dir="./InstrGen/")
 print(f"Instruction file '{output_filename}' created successfully.")
